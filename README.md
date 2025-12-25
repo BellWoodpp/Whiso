@@ -14,7 +14,6 @@ This extension shows a floating list at the **top-left** with a creation-date pr
 
 ## Use
 
-- The WHOIS panel shows automatically on page load.
 - Click the extension’s toolbar icon to show/hide the panel for the **current page** (pin it from the puzzle menu if you don’t see it).
 - In the panel, click `SITE/ALL` to change scope.
 - Click `EN/中文` to switch the panel language.

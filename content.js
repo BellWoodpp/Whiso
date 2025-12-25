@@ -55,7 +55,7 @@
   let panel = null;
   let scope = "site";
   let scopeLoaded = false;
-  let enabled = true;
+  let enabled = false;
   let posLoaded = false;
   let pos = { left: 10, top: 10 };
   let langLoaded = false;
@@ -726,7 +726,7 @@
     else void showPanel();
   });
 
-  void showPanel();
+  // activeTab model: only show after user clicks the extension icon.
 
   const observer = new MutationObserver(() => scheduleRun());
   try {

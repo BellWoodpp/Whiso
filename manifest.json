@@ -10,13 +10,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage"],
+  "permissions": ["storage", "activeTab", "scripting"],
   "host_permissions": ["https://whois.freeaiapi.xyz/*"],
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
-    }
-  ]
+  "content_scripts": []
 }
