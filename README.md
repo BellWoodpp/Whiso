@@ -29,4 +29,5 @@ This extension shows a floating list at the **top-left** with a creation-date pr
 
 ## Privacy
 
-- Privacy policy: `whois-domain-date-extension/PRIVACY.md`
+- Privacy policy (source): `whois-domain-date-extension/PRIVACY.md`
+- Privacy policy (public page for Chrome Web Store): publish `whois-domain-date-extension/docs/privacy-policy.html` and use its public URL in the store listing (e.g. GitHub Pages: `https://<user>.github.io/<repo>/privacy-policy.html`)
