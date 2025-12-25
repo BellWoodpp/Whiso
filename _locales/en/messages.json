@@ -1,0 +1,12 @@
+{
+  "extName": {
+    "message": "WHOIS Domain Date"
+  },
+  "extDescription": {
+    "message": "Shows WHOIS creation date for the current site or all domains on the page."
+  },
+  "actionTitle": {
+    "message": "Toggle WHOIS panel"
+  }
+}
+

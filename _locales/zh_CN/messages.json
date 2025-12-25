@@ -1,0 +1,12 @@
+{
+  "extName": {
+    "message": "WHOIS 域名时间"
+  },
+  "extDescription": {
+    "message": "显示当前网站或页面所有域名的 WHOIS 注册日期。"
+  },
+  "actionTitle": {
+    "message": "显示/隐藏 WHOIS 面板"
+  }
+}
+
