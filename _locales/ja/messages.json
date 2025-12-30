@@ -1,0 +1,12 @@
+{
+  "extName": {
+    "message": "WHOIS ドメイン日付"
+  },
+  "extDescription": {
+    "message": "現在のサイト、またはページ内のすべてのドメインの WHOIS 作成日を表示します。"
+  },
+  "actionTitle": {
+    "message": "WHOIS パネルを表示/非表示"
+  }
+}
+

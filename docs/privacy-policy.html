@@ -39,8 +39,8 @@
   </head>
   <body>
     <main>
-      <h1>Privacy Policy / 隐私权政策</h1>
-      <div class="meta">Effective date / 生效日期：2025-12-25</div>
+      <h1>Privacy Policy / 隐私权政策 / プライバシーポリシー</h1>
+      <div class="meta">Effective date / 生效日期：2025-12-27</div>
 
       <section class="lang" aria-label="English">
         <h2>English</h2>
@@ -65,6 +65,11 @@
         <h3>Network requests / data sharing</h3>
         <ul>
           <li>To fetch WHOIS creation dates, the extension sends <strong>domain names</strong> to <code>https://whois.freeaiapi.xyz/</code>.</li>
+          <li>
+            If the WHOIS service does not support a TLD, the extension may also send <strong>domain names</strong> to <code>https://rdap.org/</code> and/or the
+            authoritative RDAP server for that TLD (as part of standard RDAP redirects).
+          </li>
+          <li>To validate TLDs (reduce false positives), the extension may download the public IANA TLD list from <code>https://data.iana.org/</code> and cache it locally.</li>
           <li>The extension does <strong>not</strong> send page titles, full URLs, form inputs, cookies, passwords, or any personal identifiers.</li>
           <li>
             Like any standard web request, the WHOIS service may receive technical data such as your IP address and User-Agent as part of the HTTP
@@ -123,6 +128,10 @@
         <h3>网络请求 / 数据共享</h3>
         <ul>
           <li>为查询 WHOIS 创建日期，扩展会将<strong>域名</strong>发送到 <code>https://whois.freeaiapi.xyz/</code>。</li>
+          <li>
+            若该 WHOIS 服务不支持某些后缀，扩展也可能会将<strong>域名</strong>发送到 <code>https://rdap.org/</code> 以及该后缀对应的权威 RDAP 服务（RDAP 标准重定向的一部分）。
+          </li>
+          <li>为校验域名后缀（减少误识别），扩展可能会从 <code>https://data.iana.org/</code> 下载公开的 IANA TLD 列表并缓存在本地。</li>
           <li>扩展不会发送网页标题、完整 URL、表单输入、Cookie、密码或任何可用于识别个人身份的信息。</li>
           <li>
             与任何标准网络请求类似，WHOIS 服务端在建立连接时可能会接收到 IP 地址、User-Agent 等技术信息。扩展不会在请求中额外添加任何用于识别用户的标识。
@@ -154,6 +163,67 @@
         <h3>更新</h3>
         <ul>
           <li>若本政策更新，我们将更新上方的生效日期。</li>
+        </ul>
+      </section>
+
+      <section class="lang" aria-label="日本語">
+        <h2>日本語</h2>
+        <p><strong>WHOIS Domain Date</strong> は、閲覧中のページに含まれるドメインの WHOIS 作成日を表示します。</p>
+
+        <h3>拡張機能が動作するタイミング</h3>
+        <ul>
+          <li>ツールバーの拡張機能アイコンをクリックしてパネルを表示した後にのみ、現在のページをスキャンします。</li>
+        </ul>
+
+        <h3>処理するデータ</h3>
+        <ul>
+          <li>
+            現在のページから検出した<strong>ドメイン名</strong>
+            <ul>
+              <li><code>SITE</code> モード：現在のサイトの登録可能なドメイン（例：<code>example.com</code>）のみ。</li>
+              <li><code>ALL</code> モード：ページのリンク/リソース/本文テキストから見つかった追加ドメインも対象。</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>ネットワークリクエスト / データ共有</h3>
+        <ul>
+          <li>WHOIS 作成日取得のため、拡張機能は<strong>ドメイン名</strong>を <code>https://whois.freeaiapi.xyz/</code> に送信します。</li>
+          <li>
+            WHOIS サービスが未対応の TLD の場合、拡張機能は<strong>ドメイン名</strong>を <code>https://rdap.org/</code> および/または当該 TLD の権威 RDAP サーバーに送信することがあります（RDAP の標準リダイレクトの一部）。
+          </li>
+          <li>TLD を検証し誤検出を減らすため、拡張機能は <code>https://data.iana.org/</code> から公開 IANA TLD リストをダウンロードし、ローカルにキャッシュする場合があります。</li>
+          <li>拡張機能はページタイトル、完全な URL、フォーム入力、Cookie、パスワード、その他個人を特定し得る情報を送信しません。</li>
+          <li>
+            標準的な Web リクエストと同様に、WHOIS サービスは HTTP 接続の一部として IP アドレスや User-Agent 等の技術情報を受け取る場合があります。拡張機能はそれらのリクエストに追加の識別子を付与しません。
+          </li>
+        </ul>
+
+        <h3>ローカル保存</h3>
+        <ul>
+          <li>拡張機能は UI 設定（言語、範囲、パネル位置）と WHOIS 結果キャッシュを <code>chrome.storage.local</code> に<strong>ローカル</strong>保存します。</li>
+          <li>キャッシュ保持期間：最大 <strong>30 日</strong>（必要に応じて更新）。</li>
+        </ul>
+
+        <h3>あなたの選択</h3>
+        <ul>
+          <li>拡張機能のサイトデータ / 拡張機能ストレージを消去するか、アンインストールすることでローカル保存データを削除できます。</li>
+        </ul>
+
+        <h3>販売 / 広告</h3>
+        <ul>
+          <li>ユーザーデータを販売しません。</li>
+          <li>広告やトラッキング目的で使用しません。</li>
+        </ul>
+
+        <h3>連絡先</h3>
+        <ul>
+          <li>連絡先：Chrome Web Store の掲載情報に表示される開発者連絡先メールを使用してください。</li>
+        </ul>
+
+        <h3>変更</h3>
+        <ul>
+          <li>本ポリシーを更新する場合、上部の発効日を更新します。</li>
         </ul>
       </section>
     </main>
